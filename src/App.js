@@ -1,12 +1,15 @@
 import React from "react";
 import "antd/dist/antd.css";
 import Routing from "./Routing";
+import ProductsContextProvider from "./contexts/productsContext";
+
+import "./App.css";
 
 const App = () => {
   return (
-    <div>
+    <ProductsContextProvider>
       <Routing />
-    </div>
+    </ProductsContextProvider>
   );
 };
 
